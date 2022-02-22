@@ -1,104 +1,108 @@
-:root{
-    --transition: all 0.7s ease;
-    --dark: rgb(49, 49, 49);
-    --green: rgb(81, 102, 55);
+:root {
+	--transition: all 0.7s ease;
+	--dark: rgb(49, 49, 49);
+	--green: rgb(81, 102, 55);
 }
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Source Code Pro', monospace;
-}
-
-html{
-    scroll-behavior: smooth;
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Source Code Pro", monospace;
 }
 
-.btn{
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    width: 140px;
-    display: block;
-    margin: 15px auto;
-    cursor: pointer;
-    transition: var(--transition);
-    color: var(--dark);
-    background-color: rgb(240, 240, 240);
+html {
+	scroll-behavior: smooth;
+}
+body {
+	line-height: 1.6;
+}
+.btn {
+	font-size: 16px;
+	font-weight: 600;
+	border: none;
+	border-radius: 100px;
+	padding: 10px;
+	width: 140px;
+	display: block;
+	margin: 15px auto;
+	cursor: pointer;
+	transition: var(--transition);
+	color: var(--dark);
+	background-color: rgb(240, 240, 240);
 }
 
-.btn:hover{
-    background-color: rgb(206, 206, 206);
+.btn:hover {
+	background-color: rgb(206, 206, 206);
+	border: 3px solid rgb(41, 41, 41);
+	transition: 120ms ease;
 }
 
-.flex{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-
-
-img{
-    width: 100%;
-    display: block;
-
+img {
+	width: 100%;
+	display: block;
 }
 
-@media(max-width: 500px){
-    body{
-        font-size: 14px;
-    }
+@media (max-width: 500px) {
+	body {
+		font-size: 14px;
+	}
 }
 
-.header{
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("/static/images/header.jpg") center/cover no-repeat;
-    min-height: 100vh;
-    color: #fff;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
+.header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+		url("/static/images/header.jpg") center/cover no-repeat;
+	min-height: 100vh;
+	color: #fff;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
 }
 
-.head-top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.head-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.head-top span{
-    cursor: pointer;
-    transition: var(--transition);
+.head-top span {
+	cursor: pointer;
+	transition: var(--transition);
 }
 
-.head-top span:hover{
-    color: var(--green)
+.head-top span:hover {
+	color: var(--green);
+}
+.site::after {
+	content: "drs";
+}
+.site:hover::after {
+	content: "dajao recabo sampelo";
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 5fr repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr) 5fr repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .head-bottom { 
-        margin-top: 50px;     
-        grid-area: 3 / 1 / 4 / 2; 
-    } 
-    .head-bottom h1{ 
-        transform: translateY(20%);
-        margin-top: 70px; 
-        font-size: 100px;
-    } 
-    .head-bottom h2{ 
-        font-size: 55px;
-    } 
-    .head-text { grid-area: 4 / 1 / 5 / 2;transform: translateY(50%);} 
-
-  
+.head-bottom {
+	flex: 1;
+}
+.head-bottom h1 {
+	padding: 8px 0;
+}
+.start{
+	margin: 20px 0;
+	font-size: 20px;
+	padding: 10px 20px;
+	border: 3px solid #fff;
+	background: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	color: antiquewhite;
+	transition: var(--transition)
+}
+.start:hover{
+	background: transparent;
+}
