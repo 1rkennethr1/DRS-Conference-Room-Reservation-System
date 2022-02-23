@@ -13,6 +13,7 @@
 			href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
 			rel="stylesheet"
 		/>
+		
 		<title>DRS Conference Rooms</title>
 	</head>
 	<body>
@@ -22,11 +23,11 @@
 					<p></p>
 				</div>
 				<div class="navicon">
-					<span id="nav-btn"><i class="fas fa-bars"></i> </span>
+					<span id="nav-btn" class="nav-btn"><i class="fas fa-bars"></i> </span>
 				</div>
 			</div>
 			<div class="head-bottom flex">
-				<h1>asjkldhasjkdhjkadhasjkdsjkahdasddadamndbasdkjjkhksj</h1>
+				<h2>Welcome</h2>
 				<p>
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias odit aliquid, dolorem
 					voluptatum laboriosam sed non autem! Et harum voluptatum quaerat, nostrum suscipit tempora
@@ -37,19 +38,20 @@
 		</header>
 
 		<!-- side nav -->
-		<div class="sidenav">
-			<span class="cancel"><i class="fas fa-times"></i> </span>
+		<div class="sidenav" id="sidenav">
+			<span class="cancel" id="cancel"><i class="fas fa-times"></i> </span>
 			<ul class="navbar">
 				<li><a href="#home">home</a></li>
-				<li><a href="#home">rooms</a></li>
-				<li><a href="#home">reserve</a></li>
-				<li><a href="#home">about us</a></li>
-				<li><a href="#home">contact us</a></li>
+				<li><a href="#rooms">rooms</a></li>
+				<li><a href="#reserve">reserve</a></li>
+				<li><a href="#aboutus">about us</a></li>
+				<li><a href="#contact">contact us</a></li>
 			</ul>
 			<button class="btn signup">sign up</button>
 			<button class="btn login">login</button>
 		</div>
 
-		<div class="modal"></div>
+		<div id="modal"></div>
+		<script src="{% static 'js/script.js' %}"></script>
 	</body>
 </html>
