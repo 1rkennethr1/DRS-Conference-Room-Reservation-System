@@ -60,3 +60,14 @@ class Account(AbstractBaseUser):
   def has_module_perms(self, app_label):
     return True
 
+
+class CustomerInfo(models.Model):
+	GENDER = (
+      ('M','Male'),
+      ('F','Female')
+    )
+	account						= models.OneToOneField(Account, on_delete=models.CASCADE,default="")
+	birthdate					= models.DateField()
+	age                      	= models.IntegerField(default=0)
+	gender						= models.CharField(max_length=10,choices=GENDER,default="Male")
+	

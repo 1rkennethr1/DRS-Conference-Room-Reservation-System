@@ -19,4 +19,6 @@ from ReservationSystem import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.IndexView,name="home"),
+    path('home/contact', views.ContactView,name="contact")
+    
 ]
