@@ -1,6 +1,6 @@
 :root {
 	--transition: all 0.7s ease;
-	--dark: rgb(172, 106, 31);
+	--dark: rgb(56, 13, 13);
 	--green: rgb(81, 102, 55);
 }
 * {
@@ -32,8 +32,8 @@ body {
 }
 
 .btn:hover {
-	background-color: rgb(206, 206, 206);
-	border: 3px solid rgba(104, 81, 20, 0.342);
+	background-color: rgb(255, 255, 255);
+	border: 3px solid rgb(255, 255, 255);
 	transition: 120ms ease;
 }
 
@@ -75,6 +75,7 @@ img {
 .head-top span {
 	cursor: pointer;
 	transition: var(--transition);
+	position: fixed;
 }
 
 .head-top span:hover {

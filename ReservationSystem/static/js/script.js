@@ -13,4 +13,3 @@ cancelBtn.addEventListener("click",function(){
     modal.classList.remove('showModal');
 });
 
-cancelBtn.style.transition = "all 0.7s ease";
