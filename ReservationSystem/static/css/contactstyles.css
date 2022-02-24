@@ -18,8 +18,7 @@ body{
   font-size: 2em;
 }
 .contactUs .title h2{
- 
-  color: #ffff; 
+  color: #0e2352; 
   font-weight: 500;
 }
 .box{
@@ -117,9 +116,9 @@ font-weight: 500;
   color: #fff;
 }
 .info .infoBox div{
- display: flex;
- align-items: center;
- margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .info .infoBox div span{
   min-width: 40px;
@@ -132,5 +131,4 @@ font-weight: 500;
   font-size: 1.5em ;
   border-radius: 50%;
   margin-right: 15px;
-
 }

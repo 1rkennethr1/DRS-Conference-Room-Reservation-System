@@ -16,6 +16,13 @@ html {
 body {
 	line-height: 1.6;
 }
+
+::-webkit-scrollbar {
+	width: 5px;
+  }
+::-webkit-scrollbar-thumb {
+	background: #333;
+  }
 .btn {
 	font-size: 16px;
 	font-weight: 600;
@@ -107,6 +114,8 @@ img {
 	width: 60vw;
 	opacity: 0.8;
 	transition: .21s ease;
+	text-align: justify;
+	text-justify: inter-word;
 }
 .start{
 	margin: 20px 0;
@@ -214,34 +223,9 @@ img {
 
 }
 
+
 .service{
-	min-height: 150vh;
+	min-height: 100vh;
 	background-color: rgb(165, 96, 31);
-}
-.header-service{
-	color: #fff;
-	font-size: 40px;
-	padding: 40px 0 40px 10px;
 	
 }
-.service .section{
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-	padding: 100px;
-	margin: 0 40px;
-	justify-items: center;
-	justify-content: center;
-	background-color: antiquewhite;
-	border-radius: 100px;
-	box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.192);
-}
-
-::-webkit-scrollbar {
-	width: 5px;
-  }
-  ::-webkit-scrollbar-thumb {
-	background: #333;
-  }
