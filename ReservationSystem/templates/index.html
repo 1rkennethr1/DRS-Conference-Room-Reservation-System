@@ -7,17 +7,12 @@
 		<script src="https://kit.fontawesome.com/87d39f6446.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="{% static 'css/styles.css' %}" />
 		<link rel="icon" href="{% static 'images/drs_logo.png' %}" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
-			rel="stylesheet"
-		/>
 		
 		<title>DRS Conference Rooms</title>
 	</head>
 	<body>
-		<header class="header">
+		<!-- header -->
+		<header class="header" id="home">
 			<div class="head-top">
 				<div class="site">
 					<p></p>
@@ -29,43 +24,96 @@
 			<div class="head-bottom flex">
 				<h2>Welcome</h2>
 				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta vero quasi consequuntur nesciunt est labore! Inventore qui voluptatum totam eum aperiam nobis saepe culpa soluta, quas porro optio iusto sunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui voluptatum modi dolorum consequuntur quia iusto dolores at, dicta ducimus nobis explicabo omnis eum quaerat ea voluptate officiis eveniet recusandae in! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit consequuntur ipsum aliquid excepturi voluptas tempora tempore quod fuga cum natus enim possimus maxime nisi, dolores non cumque consequatur facilis deleniti!
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta vero quasi consequuntur nesciunt est labore! 
 				</p>
 				<button type="button" class="start">reserve a room</button>
 			</div>
 		</header>
+		<!-- end of header  -->
 
 		<!-- side nav -->
 		<div class="sidenav" id="sidenav">
 			<span class="cancel" id="cancel"><i class="fas fa-times"></i> </span>
 			<ul class="navbar">
 				<li><a href="#home">home</a></li>
-				<li><a href="#rooms">rooms</a></li>
-				<li><a href="#reserve">reserve</a></li>
+				<li><a href="#services ">services</a></li>
 				<li><a href="#aboutus">about us</a></li>
 				<li><a href="contact">contact us</a></li>
+				<li><a href="#rooms">rooms</a></li>
 			</ul>
-			<button class="btn signup">sign up</button>
-			<button class="btn login">login</button>
+			<div class="buttons">
+				<button class="btn signup">sign up</button>
+				<button class="btn login">login</button>
+			</div>
 		</div>
-
+		<!-- full screen modal -->
 		<div id="modal"></div>
-		<script src="{% static 'js/script.js' %}"></script>
+		
+		<!-- end of side nav -->
 
-		<!-- body -->
-		<div class="service">
-			<div class="header-service">
+		<!-- services -->
+		<section class="services" id="services">
+			<div class="row">
 				<h2>Services</h2>
 			</div>
-			<div class="container">
+			<div class="row">
+				<div class="column">
+					<div class="card">
+						<div class="icon-wrapper">
+							<i class="fa-solid fa-atom"></i>
+						</div>
+						<h3>Service heading</h3>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, facere autem, nesciunt consequatur suscipit molestiae soluta atque dicta explicabo quidem quod reiciendis provident a illo similique voluptatibus praesentium ut corrupti?</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<div class="icon-wrapper">
 
-				<div class="col grid_1_of_3"> 1 of 3 </div>
-				
-				<div class="col grid_1_of_3"> 1 of 3 </div>
-				
-				<div class="col grid_1_of_3"> 1 of 3 </div>				
-				
+						</div>
+						<h3>Service heading</h3>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, facere autem, nesciunt consequatur suscipit molestiae soluta atque dicta explicabo quidem quod reiciendis provident a illo similique voluptatibus praesentium ut corrupti?</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<div class="icon-wrapper">
+
+						</div>
+						<h3>Service heading</h3>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, facere autem, nesciunt consequatur suscipit molestiae soluta atque dicta explicabo quidem quod reiciendis provident a illo similique voluptatibus praesentium ut corrupti?</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<div class="icon-wrapper">
+
+						</div>
+						<h3>Service heading</h3>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, facere autem, nesciunt consequatur suscipit molestiae soluta atque dicta explicabo quidem quod reiciendis provident a illo similique voluptatibus praesentium ut corrupti?</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<div class="icon-wrapper">
+
+						</div>
+						<h3>Service heading</h3>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, facere autem, nesciunt consequatur suscipit molestiae soluta atque dicta explicabo quidem quod reiciendis provident a illo similique voluptatibus praesentium ut corrupti?</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<div class="icon-wrapper">
+
+						</div>
+						<h3>Service heading</h3>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, facere autem, nesciunt consequatur suscipit molestiae soluta atque dicta explicabo quidem quod reiciendis provident a illo similique voluptatibus praesentium ut corrupti?</p>
+					</div>
+				</div>
 			</div>
-		</div>
+		</section>
+		<!-- end of services -->
 	</body>
+	<script src="{% static 'js/script.js' %}"></script>
 </html>
