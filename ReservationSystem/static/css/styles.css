@@ -441,6 +441,7 @@ h3{
 	align-items: center;
 	margin: 1em 0;
 }
+
 .p1 img{
 	margin-bottom: 20px;
 }
@@ -454,8 +455,18 @@ h3{
 	transition: var(--transition);
 	color: rgb(104, 104, 104);
 }
+@media screen and (max-width: 1500px) {
+	.footer-container{
 
-@media screen and (max-width: 992px) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr ; 
+		gap: 0px 100px; 
+		grid-template-areas: 
+			". ."
+			". .";	 
+	}
+}
+@media screen and (max-width: 768px) {
 	.footer-container{
 
 		grid-template-columns: 1fr;
