@@ -63,7 +63,7 @@ body {
 	align-items: center;
 }
 
-img {
+.header img {
 	width: 100%;
 	display: block;
 }
@@ -120,7 +120,7 @@ img {
 }
 .head-bottom h1{
 	transition: var(--transition);
-	font-size: 100px;	
+	font-size: 6vw;	
 }
 .head-bottom h4{
 	transition: var(--transition);
@@ -153,13 +153,15 @@ img {
 	transition: .1s ease;
 }
 @media(max-width: 1200px){
+	.head-bottom h1{
+		transition: var(--transition);
+		font-size: 6vw;	
+	}
 	.start{
 		font-size: 17px;
 		padding: 10px 15px;
 	}
-	.head-bottom h1{
-		font-size:7vw;
-	}
+
 	.head-bottom h4{
 		font-size: 3.1vw;
 	}
@@ -247,8 +249,7 @@ img {
 	transition: var(--transition);
 }
 
-section{
-	
+.services{
 	min-height: 110vh;
 	background: linear-gradient(rgb(255, 255, 255),rgba(100, 100, 100, 0.233));
 	display: grid;
@@ -349,8 +350,97 @@ h3{
 	}
 }
 
-.footer{
-	height: 100vh;
-	background: rgb(37,37,37);
+.room-slider-container{
+	min-height: 50vh;
+	background: linear-gradient(rgba(100, 100, 100, 0.233),rgb(255, 255, 255));
+}
+
+.footer-container{
+	height: 69vh;
+	background: rgb(29, 29, 29);
+	display: grid;
+	place-items: center;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: 1fr; 
+	gap: 0px 100px; 
+	grid-template-areas: 
+		". . ."; 
+	justify-content: center; 
+	align-content: center; 
+	justify-items: center; 
+	align-items: center; 
+	padding: 5em;
+	color:  rgb(218, 218, 218);
+}
+
+.brand h3{
+	font-size: 2.3vw;
+}
+.brand ul{
+	margin:1em 0;
+	list-style-type: none;
+}
+
+.brand a{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	float: left;
+	font-size: 2vw;
+	padding: 20px;
+	color: #fff;
+}
+.brand a:hover{
+	transition: var(--transition);
+	color: rgb(104, 104, 104);
+}
+
+.loc h3{
+	font-size: 1.5vw;
+}
+.loc li{
+	list-style-type: none;
+	padding: 5px 0;
+}
+.loc li a{
+	color: #fff;
+	text-decoration: none;
 	
+}
+.loc li a:hover{
+	transition: var(--transition);
+	color: rgb(104, 104, 104);
+}
+.aboutus-container {
+	max-height: 69;
+	display: grid; 
+	grid-template-columns: 1fr; 
+	grid-template-rows: 1fr 1fr 1fr 1fr; 
+	gap: 17px 1px; 
+	grid-template-areas: 
+			"."
+			"."
+			"."
+			"."; 
+	justify-content: center; 
+	align-content: center; 
+	justify-items: start; 
+	align-items: center; 
+}
+
+.aboutus img{
+	width: 30%;
+	height: 100%;
+	margin: 0;
+}
+
+.aboutus h3{
+	font-size: 1.5vw;
+}
+
+.p1{
+	display:flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
